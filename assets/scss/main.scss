@@ -36,7 +36,6 @@ ol, ul {
   }
 }
 
-
 .image {
   height: 200px;
   width: 100%;
@@ -48,3 +47,13 @@ ol, ul {
     object-fit: cover;
   }
 }
+
+
+// transitions
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
+

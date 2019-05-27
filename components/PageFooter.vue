@@ -20,7 +20,7 @@ export default {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background: rgba(0,0,0,0.05);
+    background: #f2f2f2;
     padding: 5px 50px;
 
     p {

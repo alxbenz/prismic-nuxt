@@ -32,6 +32,10 @@ import Prismic from 'prismic-javascript'
 import PrismicConfig from '~/prismic.config.js'
 
 export default {
+  transition: {
+    name: 'page',
+    mode: 'out-in'
+  },
   name: 'Post',
   async asyncData({ params, error, req }) {
     try {

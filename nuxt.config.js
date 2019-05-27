@@ -32,14 +32,6 @@ export default {
   loading: { color: '#fff' },
 
   /*
-  ** Page Transition
-  */
-  transition: {
-    name: 'page',
-    mode: 'out-in'
-  },
-
-  /*
   ** Global CSS
   */
   css: [

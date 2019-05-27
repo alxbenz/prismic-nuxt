@@ -40,6 +40,8 @@ export default {
     align-items: center;
     background: rgba(255,255,255,0.85);
 
+    z-index: 999;
+
     a {
       color: black;
       text-decoration: none;

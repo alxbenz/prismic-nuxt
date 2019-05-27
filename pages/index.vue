@@ -27,6 +27,10 @@ import Prismic from 'prismic-javascript'
 import PrismicConfig from '~/prismic.config.js'
 
 export default {
+  transition: {
+    name: 'page',
+    mode: 'out-in'
+  },
   name: 'Index',
   async asyncData({ context, error, req }) {
     try {
