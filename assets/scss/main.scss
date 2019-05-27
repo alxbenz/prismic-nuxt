@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 21px;
+
+  color: #2B2636;
+
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.container {
+  position: relative;
+  width: 1200px;
+  margin: 50px auto 100px;
+}
+
+a {
+  color: orange;
+  display: inline-block;
+  padding: 3px;
+}
+
+ol, ul {
+  padding: 0;
+  margin: 0;
+  list-style-position: inside;
+
+  li {
+    margin: .75em 0;
+  }
+}
+
+
+.image {
+  height: 200px;
+  width: 100%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
