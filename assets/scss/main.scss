@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   position: relative;
   width: 1200px;
-  margin: 50px auto 100px;
+  margin: 100px auto 100px;
 }
 
 a {
@@ -48,6 +48,11 @@ ol, ul {
   }
 }
 
+.btn-demo {
+  position: fixed;
+  bottom: 100px;
+  right: 100px;
+}
 
 // transitions
 .page-enter-active, .page-leave-active {

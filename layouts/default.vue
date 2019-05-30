@@ -2,6 +2,9 @@
   <div>
     <page-header />
     <nuxt class="nuxt-content" />
+    <nuxt-link :to="{path: '/demo'}" class="btn-demo">
+      Demo Content
+    </nuxt-link>
     <page-footer />
   </div>
 </template>
