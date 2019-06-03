@@ -12,13 +12,15 @@
 
       <prismic-rich-text :field="post.data.content_richtext" />
 
-      <nuxt-link v-if="prev" :to="`/posts/${prev.uid}`" class="prev">
-        &lt;-- {{ prev.data.headline }}
-      </nuxt-link>
+      <nav class="navigate">
+        <nuxt-link v-if="prev" :to="`/posts/${prev.uid}`" class="prev">
+          &lt;-- {{ prev.data.headline }}
+        </nuxt-link>
 
-      <nuxt-link v-if="next" :to="`/posts/${next.uid}`" class="next">
-        {{ next.data.headline }} --&gt;
-      </nuxt-link>
+        <nuxt-link v-if="next" :to="`/posts/${next.uid}`" class="next">
+          {{ next.data.headline }} --&gt;
+        </nuxt-link>
+      </nav>
     </div>
   </section>
 </template>
@@ -43,7 +45,7 @@ export default {
 
       const posts = await api.query(
         Prismic.Predicates.at('document.type', 'post'),
-        { orderings: '[document.first_publication_date]' }
+        { orderings: '[my.post.squence]' }
       )
 
       let index = null
@@ -69,3 +71,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.navigate {
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+</style>

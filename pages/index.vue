@@ -41,7 +41,7 @@ export default {
       )
       const posts = await api.query(
         Prismic.Predicates.at('document.type', 'post'),
-        { orderings: '[document.first_publication_date]' }
+        { orderings: '[my.post.squence]' }
       )
 
       return {
