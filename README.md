@@ -1,6 +1,8 @@
 # prismic-nuxt
 
-> My astonishing Nuxt.js project
+> This is a demo for using the headless CMS prismic.io and Nuxt.js as a static site generator.
+> The API used is released under Creative Commons.
+> Please feel free to contact me if there are any questions.
 
 ## Build Setup
 
