@@ -12,6 +12,12 @@
 
       <prismic-rich-text :field="post.data.content_richtext" />
 
+      <template v-if="post.data.screens">
+        <p v-for="screen in post.data.screens" :key="screen.screen.url">
+          <img class="screen" :src="screen.screen.url" :alt="screen.screen.alt">
+        </p>
+      </template>
+
       <nav class="navigate">
         <nuxt-link v-if="prev" :to="`/posts/${prev.uid}`" class="prev">
           &lt;-- {{ prev.data.headline }}
@@ -79,5 +85,9 @@ export default {
   margin-top: 50px;
   display: flex;
   justify-content: space-between;
+}
+
+.screen {
+  max-width: 100%;
 }
 </style>
